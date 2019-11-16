@@ -1,0 +1,121 @@
+.effective {
+    padding-top: 130px;
+    background-image: url(../img/bottom.png);
+    background-color: #f2fafb;
+    background-repeat: no-repeat;
+}
+
+.effective__wrapper {
+    padding-bottom: 0;
+    background-color: #fff;
+}
+
+.effective__title {
+
+
+    &::before {
+        background-image: url(../img/logo2.png);
+    }
+}
+
+.effective__text  {
+    font-family: "Roboto-Regular";
+    font-size: 23px;
+    color: #444444;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.effective-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.effective-list__item {
+    position: relative;
+    width: 370px;
+    border: 4px solid #f64d01;
+    border-radius: 7px;
+    padding: 80px 25px 25px 25px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: calc( 50% - 50px );
+        width: 100px;
+        height: 50px;
+        background-color: #fff;
+        border-bottom-left-radius: 54px;
+        border-bottom-right-radius: 54px;
+        border: 4px solid #f64d01;
+        border-top: 0;
+       
+    }
+
+    .item__img {
+        position: absolute;
+        top: -80px;
+        left: calc( 50% - 55px );
+        width: 110px;
+    }
+
+    &:last-child {
+        border-color: #62bd1f;
+
+        &::before {
+            border-color: #62bd1f;
+        }
+    }
+}
+
+.item__title {
+    font-family: "Roboto-Bold";
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.item__text {
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    color: #444444;
+    text-align: center;
+
+    span {
+        font-family: 'Roboto-Medium';
+        color: #000000;
+    }
+}
+
+.effective__conclude {
+   
+    position: relative;
+    z-index: 999;
+    width: 80%;
+    font-family: "Roboto-Medium";
+    margin: 28px auto;
+    border-radius: 7px;
+    font-size: 27px;
+    text-align: center;
+    padding: 55px;
+    background: linear-gradient(to right, #f64d01, #62bd1f);
+
+    span {
+        color: #f64d01;
+    }
+
+    
+} 
+
+.effective__conclude__text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 4px;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 35px;
+}   

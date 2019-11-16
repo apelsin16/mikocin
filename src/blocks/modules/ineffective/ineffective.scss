@@ -1,0 +1,131 @@
+.ineffective {
+    padding-top: 150px;
+    background-image: url(../img/topgrey.png);
+    background-color: #f2fafb;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+}
+
+.causes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.cause {
+    position: relative;
+    width: 370px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 5px solid #a8c53a;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+        background-color: #f2fafb;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &--first {
+        &::before {
+            background-image: url(../img/svg/star.svg);
+            
+        }
+    }
+
+    &--second {
+        &::before {
+            background-image: url(../img/svg/cream.svg);
+           
+        }
+    }
+
+    &--third {
+        &::before {
+            background-image: url(../img/svg/pills.svg);
+            
+        }
+    }
+}
+
+.cause__title {
+    font-family: "Roboto-Bold";
+    font-size: 24px;
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cause__text {
+    font-family: "Roboto-Medium";
+    font-size: 18px;
+    position: relative;
+    border-bottom: 1px solid #d2dce6;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: calc(50% - 14px);
+        width: 20px;
+
+        height: 20px;
+        border-bottom: 1px solid #d2dce6;
+        border-right: 1px solid #d2dce6;
+        transform: rotate(45deg);
+        background-color: #fff;
+        
+    }
+
+    span {
+        font-family: "Roboto-Italic";
+        color: #666666;
+    }
+}
+
+.cause__explanation {
+    margin-top: 30px;
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.444;
+
+    span {
+        font-family: 'Roboto-Medium';
+        color: #000000;
+    }
+}
+
+.ineffective__conclude {
+    &::before {
+        content: 'Вывод:';
+        font-family: "Roboto-Bold";
+        text-transform: uppercase;
+        top: -20px;
+        line-height: 50px;
+        background-color: #f1f9fb;
+        background-image: url(../img/svg/exclamation.svg);
+        
+        background-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
