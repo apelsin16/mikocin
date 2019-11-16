@@ -14,7 +14,7 @@ ul {
 
 .header {
     width: 100%;
-    background-image: url(../img/bg.webp);
+    background-image: url(../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: #383334;
@@ -179,7 +179,7 @@ ul {
 }
 
 .info-list {
-    background-image: url(../img/arrowplus.webp);
+    background-image: url(../img/arrowplus.png);
     background-repeat: no-repeat;
     // background-position: 0 0;
 
@@ -485,7 +485,7 @@ ul {
 
 @media (max-width: 1920px) {
     .header {
-        background-image: url(../img/bg1920.webp);
+        background-image: url(../img/bg1920.png);
         background-position: center;
     }
 }
